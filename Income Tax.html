@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Tax Calculator</title>
+  <link rel="stylesheet" href="Income Tax.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Income Tax Calculator</h1>
+    <label for="ti">Taxable Income:</label>
+    <input type="number" id="ti" onkeyup="computeTax()" placeholder="Enter income amount" min="0">
+    <label for="incometax">Income Tax:</label>
+    <input type="number" id="incometax" readonly placeholder="Your income tax">
+    <footer>
+      <a href="index.html" class="btn-main">Back to Main Page</a>
+    </footer>
+  </div>
+  <script src="Income Tax.js"></script>
+</body>
+</html>
