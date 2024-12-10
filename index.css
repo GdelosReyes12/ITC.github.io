@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background-color: #8dbce4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?technology,design') no-repeat center center/cover;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(60, 111, 221, 0.6); 
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+
+#navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2a6fab; 
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+#navigation a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#navigation a:hover {
+  background-color: #0b2532; 
+  color: white;
+  border-radius : 7px;
+}
+
+
+.content {
+  flex: 1;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(248, 243, 243);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2a6fab; 
+  color: white;
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 36px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  #navigation a {
+      padding: 10px 15px;
+      font-size: 14px;
+  }
+
+  .content h2 {
+      font-size: 32px;
+  }
+
+  .content p {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 14px;
+  }
+
+  #navigation a {
+      font-size: 12px;
+      padding: 8px 10px;
+  }
+
+  .content {
+      padding: 15px;
+  }
+
+  .content h2 {
+      font-size: 28px;
+  }
+
+  .content p {
+      font-size: 14px;
+  }
+}
