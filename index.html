@@ -1,139 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        .profile {
-            text-align: center;
-            margin: 2rem auto;
-        }
-
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #4CAF50;
-            margin-bottom: 1rem;
-        }
-
-        .profile h2 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .profile p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .categories {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 2rem auto;
-            max-width: 1000px;
-        }
-
-        .category {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 1.5rem;
-            flex: 1 1 calc(25% - 1rem);
-            margin: 0.5rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .category:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .category a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .category a:hover {
-            color: #388E3C;
-        }
-        
-        
-        footer {
-            background: linear-gradient(to right, #4CAF50, #81C784);
-            text-align: center;
-            bottom: 0;
-            position: fixed;
-            width: 100%;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
-        }
-   </style>
+    <title>Assignment on Information Technology</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
 
-    <section class="profile">
-        
-        <h2>Gaius Vincent M. Delos Reyes</h2>
-        <p>Ateneo Student | BS in Information Technology | Programming Enthusiast</p>
-    </section>
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to Gaius Vincent's Space</h1>
+            <p>Where Technology, Creativity, and Advocacy Intersect</p>
+        </div>
+    </header>
 
-    <section class="categories">
-        <div class="category">
-            <a href=""https://raw.githubusercontent.com/GdelosReyes12/C/main/your-file-name.css" target="_blank"" id="category1">Category 1</a>
-        </div>
-        <div class="category">
-            <a href="#" id="category2">Category 2</a>
-        </div>
-        <div class="category">
-            <a href="#" id="category3">Category 3</a>
-        </div>
-        <div class="category">
-            <a href="#" id="category4">Category 4</a>
-        </div>
-    </section>
-    
+   
+    <nav id="navigation">
+        <a href="conversion.html" id="conversion">Conversion</a>
+        <a href="Income Tax.html" id="tax">Income Tax Calculator</a>
+        <a href="N factorial.html" id="factorial">N Factorial</a>
+        <a href="payroll.html" id="payroll">Payroll</a>
+    </nav>
+
+   
+    <main class="content">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm <strong>Gaius Vincent Delos Reyes</strong>, a 1st Year Ateneo student majoring in Information Technology.
+                I am passionate about technology and aspire to become a skilled Back-end Developer. This site showcases my journey,
+                skills, and projects, reflecting my drive for growth and innovation.
+            </p>
+            <p>
+                Feel free to explore my work and connect. Together, we can create meaningful change and foster creativity in technology.
+            </p>
+        </section>
+    </main>
+
+   
     <footer>
-  &copy; 2024 Joaquin Ursua. All rights reserved.
+        <p>© 2024 Gaius Vincent M. Delos Reyes | Made with Love 💻</p>
     </footer>
 
-    <script>
-        document.querySelectorAll('.category a').forEach(link => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                alert(`You clicked on ${link.textContent}`);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
